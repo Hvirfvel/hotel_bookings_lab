@@ -15,8 +15,8 @@ MongoClient.connect('mongodb://localhost:27017', {useUnifiedTopology: true})
         const guestsRouter = createRouter(guestsCollection);
         app.use('/api/guests', guestsRouter);
     })
-    .catch(console.error)
+    .catch(console.err)
 
-app.listen(5000, () => {
+app.listen(5000, function () {
     console.log(`Listening on port ${ this.address().port }`);
 });

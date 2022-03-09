@@ -2,7 +2,7 @@ use bookings;
 db.dropDatabase();
 
 db.guests.insertMany([
-    {
+      {
         "name": "Anselm Kermon",
         "email": "akermon0@gnu.org",
         "checked_in": true
